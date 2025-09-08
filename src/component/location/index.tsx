@@ -1,8 +1,8 @@
-import { Map } from "./map"
-import { ReactComponent as CarIcon } from "../../image/car-icon.svg"
-import { ReactComponent as BusIcon } from "../../image/bus-icon.svg"
-import { LazyDiv } from "../lazyDiv"
 import { LOCATION, LOCATION_ADDRESS } from "../../const"
+import { ReactComponent as BusIcon } from "../../image/bus-icon.svg"
+import { ReactComponent as CarIcon } from "../../image/car-icon.svg"
+import { LazyDiv } from "../lazyDiv"
+import { Map } from "./map"
 
 export const Location = () => {
   return (
@@ -25,7 +25,7 @@ export const Location = () => {
           <div className="content">
             * 지하철 이용시
             <br />
-            지하철 2호선 <b>낙성대역 4번출구</b> 나와서
+            지하철 3호선 <b>신사역 4번출구</b> 나와서
             <br />
             → 첫번째 골목 끼고 좌회전
             <br />→ 마을버스 <b>관악 02번</b> 승차

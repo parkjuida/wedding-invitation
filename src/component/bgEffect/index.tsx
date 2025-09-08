@@ -70,7 +70,7 @@ class Petal {
     this.x += this.xSpeed
     this.y += this.ySpeed
     this.flip += this.flipSpeed
-    this.draw()
+    // this.draw()
   }
 }
 

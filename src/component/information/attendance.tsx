@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react"
 import {
   BRIDE_FULLNAME,
   dayjs,
@@ -5,12 +6,11 @@ import {
   LOCATION,
   WEDDING_DATE,
 } from "../../const"
+import { ReactComponent as CalendarIcon } from "../../image/calendar-icon.svg"
+import { ReactComponent as HeartIcon } from "../../image/heart-icon.svg"
+import { ReactComponent as MarkerIcon } from "../../image/marker-icon.svg"
 import { Button } from "../button"
 import { useModal } from "../store"
-import { useEffect, useRef, useState } from "react"
-import { ReactComponent as HeartIcon } from "../../image/heart-icon.svg"
-import { ReactComponent as CalendarIcon } from "../../image/calendar-icon.svg"
-import { ReactComponent as MarkerIcon } from "../../image/marker-icon.svg"
 
 const RULES = {
   name: {
@@ -55,7 +55,8 @@ export const AttendanceInfo = () => {
           <div className="wedding-info">
             <HeartIcon /> 신랑 {GROOM_FULLNAME} & 신부 {BRIDE_FULLNAME}
             <br />
-            <CalendarIcon /> {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시")}
+            <CalendarIcon />{" "}
+            {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시 mm분")}
             <br />
             <MarkerIcon /> {LOCATION}
           </div>
