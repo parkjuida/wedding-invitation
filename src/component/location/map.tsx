@@ -1,16 +1,17 @@
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useKakao, useNaver } from "../../component/store"
-import nmapIcon from "../../image/nmap-icon.png"
-import knaviIcon from "../../image/knavi-icon.png"
-import tmapIcon from "../../image/tmap-icon.png"
-import { ReactComponent as LockIcon } from "../../image/lock-icon.svg"
-import { ReactComponent as UnlockIcon } from "../../image/unlock-icon.svg"
 import {
   KMAP_PLACE_ID,
   LOCATION,
   NMAP_PLACE_ID,
   WEDDING_HALL_POSITION,
+  WEDDING_HALL_POSITION_FOR_MAP,
 } from "../../const"
+import knaviIcon from "../../image/knavi-icon.png"
+import { ReactComponent as LockIcon } from "../../image/lock-icon.svg"
+import nmapIcon from "../../image/nmap-icon.png"
+import tmapIcon from "../../image/tmap-icon.png"
+import { ReactComponent as UnlockIcon } from "../../image/unlock-icon.svg"
 
 export const Map = () => {
   return process.env.REACT_APP_NAVER_MAP_CLIENT_ID ? (
@@ -42,8 +43,8 @@ const NaverMap = () => {
   useEffect(() => {
     if (naver) {
       const map = new naver.maps.Map(ref.current, {
-        center: WEDDING_HALL_POSITION,
-        zoom: 17,
+        center: WEDDING_HALL_POSITION_FOR_MAP,
+        zoom: 16,
       })
 
       new naver.maps.Marker({ position: WEDDING_HALL_POSITION, map })

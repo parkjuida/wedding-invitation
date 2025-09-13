@@ -124,3 +124,27 @@
     }
   }
 }
+
+.line-3,
+.line-4,
+.line-shinbundang {
+  color: white;
+  padding: 0.1em 0.5em;
+  border-radius: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0 0.1em;
+  display: inline-block;
+  line-height: 1.5;
+}
+.line-4 {
+  background-color: #00a5de; // 4호선 하늘색
+}
+
+.line-3 {
+  background-color: #ef7c1c; // 3호선 주황색
+}
+
+.line-shinbundang {
+  background-color: #d4003b; // 신분당선 빨간색
+}

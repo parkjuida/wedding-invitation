@@ -25,15 +25,16 @@ export const WEDDING_DATE = dayjs.tz("2025-12-06 14:30", "Asia/Seoul")
 export const HOLIDAYS = [15]
 
 export const LOCATION = "디렉팅웨딩CM"
-export const LOCATION_ADDRESS = "서울시 관악구 관악로 1, 연구공원 본관 1층"
+export const LOCATION_ADDRESS = "서울 강남구 도산대로 150, 지하1층 디렉팅웨딩CM"
 
 export const SHARE_ADDRESS = LOCATION
 export const SHARE_ADDRESS_TITLE = LOCATION
 
-export const WEDDING_HALL_POSITION = [126.9594982, 37.4657134]
+export const WEDDING_HALL_POSITION_FOR_MAP = [127.023771273, 37.517455143]
+export const WEDDING_HALL_POSITION = [127.025179719, 37.517973816]
 
-export const NMAP_PLACE_ID = 13321741
-export const KMAP_PLACE_ID = 8634826
+export const NMAP_PLACE_ID = 1318431665
+export const KMAP_PLACE_ID = 834341577
 
 export const BRIDE_FULLNAME = "수연"
 export const BRIDE_FIRSTNAME = "수연"

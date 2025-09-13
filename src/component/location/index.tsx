@@ -20,57 +20,56 @@ export const Location = () => {
           <div className="transportation-icon-wrapper">
             <BusIcon className="transportation-icon" />
           </div>
-          <div className="heading">대중교통</div>
+          <div className="heading">지하철</div>
           <div />
           <div className="content">
-            * 지하철 이용시
+            지하철 <span className="line-3">3호선</span>
+            <span className="line-shinbundang">신분당선</span> <b>1번 출구</b>
+            에서 도보 직진 3분
             <br />
-            지하철 3호선 <b>신사역 4번출구</b> 나와서
-            <br />
-            → 첫번째 골목 끼고 좌회전
-            <br />→ 마을버스 <b>관악 02번</b> 승차
-            <br />→ <b>서울대후문·연구공원 정류장</b> 하차
-            <br />
-            → 길 건너 간판 참고해 도보로 100m 이동
-            <br />
-            검은색 피라미드 유리 건물입니다.
           </div>
           <div />
-          <div className="content">
-            * 버스 이용 시
-            <br />
-            - 간선(파랑): 461, 641
-            <br />
-            - 지선(초록): 5413, 5524, 5528
-            <br />
-            반드시 <b>낙성대입구</b> 하차
-            <br />→ 마을버스 <b>관악 02번</b> 이용
-            <br />
-            이하 위와 동일합니다.
+        </div>
+        <div className="location-info">
+          <div className="transportation-icon-wrapper">
+            <BusIcon className="transportation-icon" />
           </div>
+          <div className="heading">자차</div>
+          <div />
+
+          <div className="content">
+            <b>[디렉팅웨딩CM]</b> 서울특별시 강남구 도산대로 150
+            <br />
+            건물 뒤편 주차타워 (발렛지원 / 2시간 무료)
+          </div>
+          <div />
         </div>
         <div className="location-info">
           <div className="transportation-icon-wrapper">
             <CarIcon className="transportation-icon" />
           </div>
-          <div className="heading">자가용</div>
-          <div />
-          <div className="content">
-            네이버 지도, 카카오 네비, 티맵 등 이용
-            <br />
-            <b>서울대학교 연구공원 웨딩홀</b> 검색
-            <br />
-            - 주차 요금은 무료입니다.
-            <br />
-            (주차장 이용 시 웨딩홀과 바로 연결)
-          </div>
+          <div className="heading">SRT</div>
           <div />
           <div className="content">
             <b>
-              ※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-              유의바랍니다. 낙성대 방향으로 이용해주세요.
+              수서역 → <span className="line-3">3호선</span> → 신사역
             </b>
           </div>
+          <div />
+        </div>
+        <div className="location-info">
+          <div className="transportation-icon-wrapper">
+            <CarIcon className="transportation-icon" />
+          </div>
+          <div className="heading">KTX</div>
+          <div />
+          <div className="content">
+            <b>
+              서울역 → <span className="line-4">4호선</span> → 충무로역 →{" "}
+              <span className="line-3">3호선</span> → 신사역
+            </b>
+          </div>
+          <div />
         </div>
       </LazyDiv>
     </>
