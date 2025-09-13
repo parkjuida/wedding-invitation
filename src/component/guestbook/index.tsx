@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react"
-import { Button } from "../button"
 import { dayjs } from "../../const"
+import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../store"
 import offlineGuestBook from "./offlineGuestBook.json"
@@ -470,7 +470,7 @@ const DeleteGuestBookModal = ({
           }
 
           const result = await fetch(
-            `${process.env.REACT_APP_SERVER_URL}/guestbook`,
+            `${process.env.REACT_APP_SERVER_URL}/documents/guestbook`,
             {
               method: "PUT",
               headers: { "Content-Type": "application/json" },
