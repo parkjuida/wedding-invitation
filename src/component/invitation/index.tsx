@@ -1,40 +1,42 @@
 import { Fragment } from "react/jsx-runtime"
+import { useModal } from "../../component/store"
 import {
+  BRIDE_FATHER,
   BRIDE_FULLNAME,
   BRIDE_INFO,
-  BRIDE_FATHER,
   BRIDE_MOTHER,
+  BRIDE_TITLE,
+  GROOM_FATHER,
   GROOM_FULLNAME,
   GROOM_INFO,
-  GROOM_FATHER,
   GROOM_MOTHER,
   GROOM_TITLE,
-  BRIDE_TITLE,
 } from "../../const"
-import { useModal } from "../../component/store"
+import blueFlowerImage from "../../image/blue-flower.png"
+import { ReactComponent as EnvelopeIcon } from "../../image/envelope-icon.svg"
+import { ReactComponent as PhoneIcon } from "../../image/phone-flip-icon.svg"
 import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
-import { ReactComponent as PhoneIcon } from "../../image/phone-flip-icon.svg"
-import { ReactComponent as EnvelopeIcon } from "../../image/envelope-icon.svg"
 
 export const Invitation = () => {
   const { openModal, closeModal } = useModal()
   return (
     <LazyDiv className="card invitation">
-      <h2 className="english">Invitation</h2>
-
+      <h2 className="english"></h2>
+      <img src={blueFlowerImage} alt="sample" />
       <div className="break" />
 
-      <div className="content">싱그러운 여름 향기 가득한 날</div>
-      <div className="content">소중한 분들을 모시고</div>
-      <div className="content">사랑의 약속을 하려고 합니다.</div>
+      <div className="content">이 모든 것 위에 사랑을 더하라</div>
+      <div className="content">이는 온전하게 매는 띠니라</div>
+      <div className="content">(골로새서 3:14)</div>
       <div className="break" />
-      <div className="content">햇살이 뜨거울 땐 가려주고,</div>
-      <div className="content">비가 오면 우산이 되어주는</div>
-      <div className="content">부부가 되겠습니다.</div>
+      <div className="content">두 사람이 사랑으로 만나</div>
+      <div className="content">서로의 손을 꼭 잡고</div>
+      <div className="content">새로운 가정을 꿈꾸고 있습니다.</div>
       <div className="break" />
-      <div className="content">기쁜날 함께 하시어</div>
-      <div className="content">저희의 앞날을 축복해 주세요.</div>
+      <div className="content">따뜻한 마음 가득 안고</div>
+      <div className="content">귀한 걸음 하시어 축복해주시면</div>
+      <div className="content">감사하겠습니다.</div>
 
       <div className="break" />
 
