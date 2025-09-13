@@ -38,7 +38,7 @@ export const KMAP_PLACE_ID = 834341577
 
 export const BRIDE_FULLNAME = "수연"
 export const BRIDE_FIRSTNAME = "수연"
-export const BRIDE_TITLE = "장녀"
+export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "박명규"
 export const BRIDE_MOTHER = "정자희"
 export const BRIDE_INFO = [
@@ -64,7 +64,7 @@ export const BRIDE_INFO = [
 
 export const GROOM_FULLNAME = "준형"
 export const GROOM_FIRSTNAME = "준형"
-export const GROOM_TITLE = "장남"
+export const GROOM_TITLE = "아들"
 export const GROOM_FATHER = "박인철"
 export const GROOM_MOTHER = "장원주"
 export const GROOM_INFO = [
