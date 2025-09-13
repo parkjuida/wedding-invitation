@@ -22,7 +22,7 @@ export const Invitation = () => {
   const { openModal, closeModal } = useModal()
   return (
     <LazyDiv className="card invitation">
-      <h2 className="english"></h2>
+      {/* <h2 className="english"></h2> */}
       <img src={blueFlowerImage} alt="sample" />
       <div className="break" />
 
