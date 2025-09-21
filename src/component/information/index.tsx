@@ -1,4 +1,5 @@
 import { BRIDE_INFO, GROOM_INFO } from "../../const"
+import orangeFlowerImage from "../../image/orange-flower.png"
 import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../store"
@@ -8,7 +9,10 @@ export const Information = () => {
   const { openModal, closeModal } = useModal()
   return (
     <LazyDiv className="card information">
-      <h2 className="english">Information</h2>
+      <div className="header-title">
+        <img src={orangeFlowerImage} alt="sample" />
+        <h2 className="english">Information</h2>
+      </div>
       <div className="info-card">
         <div className="label">식사 안내</div>
         <div className="content">

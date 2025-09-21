@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
-import { ReactComponent as ArrowLeft } from "../../image/angle-left-sm.svg"
-import { LazyDiv } from "../lazyDiv"
-import { Button } from "../button"
-import { useModal } from "../store"
 import { GALLERY_IMAGES } from "../../const"
+import { ReactComponent as ArrowLeft } from "../../image/angle-left-sm.svg"
+import orangeFlowerImage from "../../image/orange-flower.png"
+import { Button } from "../button"
+import { LazyDiv } from "../lazyDiv"
+import { useModal } from "../store"
 
 const CAROUSEL_ITEMS = GALLERY_IMAGES.map((item, idx) => (
   <div className="carousel-item" key={idx}>
@@ -280,7 +281,11 @@ export const Gallery = () => {
 
   return (
     <LazyDiv className="card gallery">
-      <h2 className="english">Gallery</h2>
+      <div className="header-title">
+        <img src={orangeFlowerImage} alt="sample" />
+        <h2 className="english">Gallery</h2>
+      </div>
+
       <div className="carousel-wrapper">
         <div
           className="carousel"

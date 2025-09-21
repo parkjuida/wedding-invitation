@@ -1,15 +1,18 @@
 import { LOCATION, LOCATION_ADDRESS } from "../../const"
 import { ReactComponent as CarIcon } from "../../image/car-icon.svg"
+import orangeFlowerImage from "../../image/orange-flower.png"
 import { ReactComponent as SubwayIcon } from "../../image/subway-icon.svg"
 import { ReactComponent as TrainIcon } from "../../image/train2-icon.svg"
 import { LazyDiv } from "../lazyDiv"
 import { Map } from "./map"
-
 export const Location = () => {
   return (
     <>
       <LazyDiv className="card location">
-        <h2 className="english">Location</h2>
+        <div className="header-title">
+          <img src={orangeFlowerImage} alt="sample" />
+          <h2 className="english">Location</h2>
+        </div>
         <div className="addr">
           {LOCATION}
           <div className="detail">{LOCATION_ADDRESS}</div>
@@ -17,6 +20,10 @@ export const Location = () => {
         <Map />
       </LazyDiv>
       <LazyDiv className="card location">
+        <div className="header-title">
+          <img src={orangeFlowerImage} alt="sample" />
+          <h2 className="english">오시는길</h2>
+        </div>
         <div className="location-info">
           <div className="transportation-icon-wrapper">
             <SubwayIcon className="transportation-icon" />

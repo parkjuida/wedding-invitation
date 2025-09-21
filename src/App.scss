@@ -22,7 +22,7 @@
   --white-color: #ffffff;
   --red-color: #ff0000;
 
-  font-family: "Cafe24Oneprettynight";
+  font-family: "GowoonDodum";
   font-size: 20px;
   @media (max-width: 500px) {
     font-size: 4vw;
@@ -74,7 +74,7 @@ $colors: (
 }
 
 button {
-  font-family: "MapoGoldenPier";
+  font-family: "GowoonDodum";
   font-size: 1rem;
   border: none;
   background-color: transparent;
@@ -204,8 +204,26 @@ h2 {
   color: var(--theme-color);
   font-weight: normal;
   &.english {
-    font-family: "Allura";
+    font-family: "Sungsil";
   }
+}
+
+.header-title {
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 (글줄 높이에 맞춤) */
+  justify-content: center; /* 가로 중앙 정렬 */
+  gap: 0.5rem; /* 글자와 이미지 간격 */
+}
+
+.header-title h2 {
+  margin: 0; /* h2 기본 마진 제거 */
+  line-height: 1; /* 높이 계산 깔끔하게 */
+}
+
+.header-title img {
+  height: 3rem; /* h2 글씨 높이와 동일 */
+  width: auto; /* 비율 유지 */
+  display: block; /* 아래쪽 잔여 여백 방지 */
 }
 
 div.break {

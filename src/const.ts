@@ -2,18 +2,6 @@ import dayjs from "dayjs"
 import "dayjs/locale/ko"
 import timezone from "dayjs/plugin/timezone"
 import utc from "dayjs/plugin/utc"
-import image1 from "./image/image1.png"
-import image10 from "./image/image10.png"
-import image11 from "./image/image11.png"
-import image12 from "./image/image12.png"
-import image2 from "./image/image2.png"
-import image3 from "./image/image3.png"
-import image4 from "./image/image4.png"
-import image5 from "./image/image5.png"
-import image6 from "./image/image6.png"
-import image7 from "./image/image7.png"
-import image8 from "./image/image8.png"
-import image9 from "./image/image9.png"
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -38,7 +26,7 @@ export const KMAP_PLACE_ID = 834341577
 
 export const BRIDE_FULLNAME = "수연"
 export const BRIDE_FIRSTNAME = "수연"
-export const BRIDE_TITLE = "딸"
+export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "박명규"
 export const BRIDE_MOTHER = "정자희"
 export const BRIDE_INFO = [
@@ -89,16 +77,16 @@ export const GROOM_INFO = [
 ]
 
 export const GALLERY_IMAGES = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
-  image12,
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/KTH_2386.jpeg?alt=media&token=cf7cb22b-f3de-46d9-a67e-faddadbaa84a",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/KTH_3347.jpeg?alt=media&token=1d06feae-8238-4001-977b-f0756ad5d8f6",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/IMG_6840.jpeg?alt=media&token=2a86d759-6d02-4fee-9bc5-2b4ec5a9681e",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_1596.jpeg?alt=media&token=abddd431-01bf-452b-ae01-10cc4a8b915d",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_1240.jpeg?alt=media&token=74959018-eb62-4f85-adad-ba8c673a430b",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/KTH_3879.jpeg?alt=media&token=09ad4e12-b987-4bac-bf06-929c0a777d19",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/KTH_4534.jpeg?alt=media&token=7762f310-8409-4c5b-9b34-9eb0cd8a04ab",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_1175.jpeg?alt=media&token=b9b16a6f-ad2e-40ad-b798-151a4ecd06aa",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_1000.jpeg?alt=media&token=a526dd04-7f2a-49b3-bb12-aaa51b1a513e",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_0146.jpeg?alt=media&token=5ca40e21-9056-48e9-b7cd-67f795822df2",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/KTH_4667.jpeg?alt=media&token=fe84e16d-8b32-4d5f-934c-c5ea75ae554f",
+  "https://firebasestorage.googleapis.com/v0/b/mochung-b8899.firebasestorage.app/o/SIN_1685.jpeg?alt=media&token=0a06ea93-0128-4b8c-ad05-5033f49da979",
 ]

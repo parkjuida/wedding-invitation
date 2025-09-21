@@ -28,7 +28,8 @@ export const Invitation = () => {
 
       <div className="content">이 모든 것 위에 사랑을 더하라</div>
       <div className="content">이는 온전하게 매는 띠니라</div>
-      <div className="content">(골로새서 3:14)</div>
+      <div className="content-small">(골로새서 3:14)</div>
+      <div className="content-space">.....</div>
       <div className="break" />
       <div className="content">두 사람이 사랑으로 만나</div>
       <div className="content">서로의 손을 꼭 잡고</div>
@@ -37,9 +38,9 @@ export const Invitation = () => {
       <div className="content">따뜻한 마음 가득 안고</div>
       <div className="content">귀한 걸음 하시어 축복해주시면</div>
       <div className="content">감사하겠습니다.</div>
-
+      <div className="content-space">.....</div>
       <div className="break" />
-
+      <div className="name">2025년 12월 6일 (토) 오후 2시 30분</div>
       <div className="name">
         {GROOM_FATHER} · {GROOM_MOTHER}
         <span className="relation">

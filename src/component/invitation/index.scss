@@ -1,17 +1,31 @@
 .invitation {
   .content {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 1rem;
+  }
+
+  .content-small {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.8rem;
+  }
+
+  .content-space {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.8rem;
+    color: var(--theme-color);
   }
 
   .name {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     .relation {
-      font-size: 0.75rem;
-      opacity: 0.7;
+      font-size: 0.8rem;
+      opacity: 0.8;
 
       .relation-name {
         display: inline-block;
@@ -19,6 +33,12 @@
       }
     }
   }
+}
+
+.invitation img {
+  height: auto; /* h2 글씨 높이와 동일 */
+  width: auto; /* 비율 유지 */
+  display: block; /* 아래쪽 잔여 여백 방지 */
 }
 
 .contact-modal {

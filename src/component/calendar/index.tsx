@@ -5,8 +5,8 @@ import {
   HOLIDAYS,
   WEDDING_DATE,
 } from "../../const"
+import orangeFlowerImage from "../../image/orange-flower.png"
 import { LazyDiv } from "../lazyDiv"
-
 const firstDayOfWeek = WEDDING_DATE.startOf("month").day()
 const daysInMonth = WEDDING_DATE.daysInMonth()
 
@@ -41,7 +41,11 @@ export const Calendar = () => {
 
   return (
     <LazyDiv className="card calendar">
-      <h2 className="english">The Wedding Day</h2>
+      <div className="header-title">
+        <img src={orangeFlowerImage} alt="sample" />
+        <h2 className="english">The Wedding Day</h2>
+      </div>
+
       <div className="break" />
       {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시 mm분")}
       <div className="calendar-wrapper">

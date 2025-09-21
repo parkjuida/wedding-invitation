@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { dayjs } from "../../const"
+import orangeFlowerImage from "../../image/orange-flower.png"
 import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../store"
+
 import offlineGuestBook from "./offlineGuestBook.json"
 
 const RULES = {
@@ -56,8 +58,10 @@ export const GuestBook = () => {
 
   return (
     <LazyDiv className="card guestbook">
-      <h2 className="english">Guest Book</h2>
-
+      <div className="header-title">
+        <img src={orangeFlowerImage} alt="sample" />
+        <h2 className="english">Guest Book</h2>
+      </div>
       <div className="break" />
 
       {posts.map((post) => (
@@ -106,7 +110,7 @@ export const GuestBook = () => {
             <div className="title">
               <div className="name">{post.name}</div>
               <div className="date">
-                {dayjs.unix(post.timestamp).format("YYYY-MM-DD")}
+                {dayjs(post.timestamp).format("YYYY-MM-DD HH:mm")}
               </div>
             </div>
             <div className="content">{post.content}</div>
@@ -389,7 +393,7 @@ const AllGuestBookModal = ({
             <div className="title">
               <div className="name">{post.name}</div>
               <div className="date">
-                {dayjs.unix(post.timestamp).format("YYYY-MM-DD")}
+                {dayjs(post.timestamp).format("YYYY-MM-DD HH:mm")}
               </div>
             </div>
             <div className="content">{post.content}</div>
@@ -470,9 +474,9 @@ const DeleteGuestBookModal = ({
           }
 
           const result = await fetch(
-            `${process.env.REACT_APP_SERVER_URL}/documents/guestbook`,
+            `${process.env.REACT_APP_SERVER_URL}/guestbook`,
             {
-              method: "PUT",
+              method: "DELETE",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ id: postId, password }),
             },
