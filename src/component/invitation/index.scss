@@ -1,4 +1,8 @@
 .invitation {
+  img {
+    margin-top: -3rem;
+    margin-bottom: -2rem;
+  }
   .content {
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
@@ -6,26 +10,26 @@
   }
 
   .content-small {
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .content-space {
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
+    // margin-top: 0.1rem;
+    // margin-bottom: 0.1rem;
     font-size: 0.8rem;
     color: var(--theme-color);
   }
 
   .name {
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     .relation {
       font-size: 0.8rem;
-      opacity: 0.8;
+      opacity: 0.6;
 
       .relation-name {
         display: inline-block;
