@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { GALLERY_IMAGES } from "../../const"
 import { ReactComponent as ArrowLeft } from "../../image/angle-left-sm.svg"
+import blueFlowerImage from "../../image/blue-flower.png"
 import orangeFlowerImage from "../../image/orange-flower.png"
 import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
@@ -369,7 +370,11 @@ export const Gallery = () => {
           openModal({
             className: "all-photo-modal",
             closeOnClickBackground: true,
-            header: <div className="title">사진 전체보기</div>,
+            header: (
+              <div className="title">
+                <img src={blueFlowerImage} alt="sample" />
+              </div>
+            ),
             content: (
               <>
                 <div className="photo-list">

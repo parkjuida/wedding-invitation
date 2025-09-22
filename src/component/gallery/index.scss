@@ -128,8 +128,17 @@ $transition-duration: 0.3s;
     .title {
       text-align: center;
       font-size: 1.2rem;
+      font-family: "Sungsil";
       color: var(--theme-color);
       padding-bottom: 1rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    img {
+      height: 2.8rem; /* h2 글씨 높이와 동일 */
+      width: auto; /* 비율 유지 */
+      display: block; /* 아래쪽 잔여 여백 방지 */
     }
   }
 
@@ -138,7 +147,7 @@ $transition-duration: 0.3s;
     .photo-list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: 12rem;
+      grid-auto-rows: auto;
       gap: 0.5rem;
       img {
         width: 100%;
