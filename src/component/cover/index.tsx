@@ -1,6 +1,6 @@
 import {
-  BRIDE_FULLNAME,
-  GROOM_FULLNAME,
+  BRIDE_FIRSTNAME,
+  GROOM_FIRSTNAME,
   LOCATION,
   WEDDING_DATE,
 } from "../../const"
@@ -34,7 +34,7 @@ export const Cover = () => {
         <img src={orangeBlueFlowerImage} alt="sample" />
       </div>
       <div className="names">
-        {GROOM_FULLNAME} & {BRIDE_FULLNAME}
+        {GROOM_FIRSTNAME} & {BRIDE_FIRSTNAME}
       </div>
       <div className="info">
         {WEDDING_DATE.format("YYYY년 MMMM D일 dddd A h시 mm분")}

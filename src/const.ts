@@ -24,7 +24,7 @@ export const WEDDING_HALL_POSITION = [127.025179719, 37.517973816]
 export const NMAP_PLACE_ID = 1318431665
 export const KMAP_PLACE_ID = 834341577
 
-export const BRIDE_FULLNAME = "수연"
+export const BRIDE_FULLNAME = "박수연"
 export const BRIDE_FIRSTNAME = "수연"
 export const BRIDE_TITLE = "딸"
 export const BRIDE_FATHER = "박명규"
@@ -33,24 +33,24 @@ export const BRIDE_INFO = [
   {
     relation: "신부",
     name: BRIDE_FULLNAME,
-    phone: "010-0000-0000",
-    account: "우리은행 0000000000000",
+    phone: "010-6778-4769",
+    account: "기업은행 158-093907-01-019",
   },
   {
     relation: "신부 아버지",
     name: BRIDE_FATHER,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000",
+    phone: "010-8320-6500",
+    account: "하나은행 532-810290-01507",
   },
   {
     relation: "신부 어머니",
     name: BRIDE_MOTHER,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000000",
+    phone: "010-4756-4768",
+    account: "하나은행 532-910426-94007",
   },
 ]
 
-export const GROOM_FULLNAME = "준형"
+export const GROOM_FULLNAME = "박준형"
 export const GROOM_FIRSTNAME = "준형"
 export const GROOM_TITLE = "아들"
 export const GROOM_FATHER = "박인철"
@@ -59,20 +59,20 @@ export const GROOM_INFO = [
   {
     relation: "신랑",
     name: GROOM_FULLNAME,
-    phone: "010-0000-0000",
-    account: "하나은행 00000000000000",
+    phone: "010-2859-6858",
+    account: "신한은행 110-501-376429",
   },
   {
     relation: "신랑 아버지",
     name: GROOM_FATHER,
-    phone: "010-0000-0000",
-    account: "신한은행 000000000000",
+    phone: "010-5131-6858",
+    account: "농협 125-01-079991",
   },
   {
     relation: "신랑 어머니",
     name: GROOM_MOTHER,
-    phone: "010-0000-0000",
-    account: "국민은행 000000000000",
+    phone: "010-7937-6858",
+    account: "",
   },
 ]
 

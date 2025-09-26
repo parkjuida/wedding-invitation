@@ -91,11 +91,7 @@ export const AttendanceInfo = () => {
   return (
     <div className="info-card">
       <div className="label">참석 의사 전달</div>
-      <div className="content">
-        신랑, 신부에게 참석의사를
-        <br />
-        미리 전달할 수 있어요.
-      </div>
+      <div className="content"></div>
 
       <div className="break" />
 
