@@ -16,7 +16,7 @@ export const Information = () => {
       <div className="info-card">
         <div className="label">안내</div>
         <div className="content">
-          식사시간: 14시 30분 ~ 17시 00분
+          식사시간: 14시 00분 ~ 16시 30분
           <br />
           예식장 사정상 화환은 정중히 사양합니다.
         </div>
