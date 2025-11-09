@@ -1,8 +1,10 @@
 import { LOCATION, LOCATION_ADDRESS } from "../../const"
+import { ReactComponent as BusIcon } from "../../image/bus-icon.svg"
 import { ReactComponent as CarIcon } from "../../image/car-icon.svg"
 import orangeFlowerImage from "../../image/orange-flower.png"
 import { ReactComponent as SubwayIcon } from "../../image/subway-icon.svg"
 import { ReactComponent as TrainIcon } from "../../image/train2-icon.svg"
+
 import { LazyDiv } from "../lazyDiv"
 import { Map } from "./map"
 export const Location = () => {
@@ -49,6 +51,19 @@ export const Location = () => {
             <b>[디렉팅웨딩CM]</b> 서울특별시 강남구 도산대로 150
             <br />
             건물 뒤편 주차타워 (발렛지원 / 2시간 무료)
+          </div>
+          <div />
+        </div>
+        <div className="location-info">
+          <div className="transportation-icon-wrapper">
+            <BusIcon className="transportation-icon" />
+          </div>
+          <div className="heading">고속버스</div>
+          <div />
+          <div className="content">
+            <b>
+              고속터미널 → <span className="line-3">3호선</span> → 신사역
+            </b>
           </div>
           <div />
         </div>
